@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+
+#main {
+  width: 100%;
+  height: 100%;
+  background: rgb(5, 5, 78);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#pannel {
+  width: 80%;
+  height: 80%;
+  background: rgb(209, 212, 233);
+  border-radius: 13px;
+  overflow: hidden;
+}
+
+/* pannel top here  */
+#pat {
+  width: 100%;
+  height: 90px;
+  background: rgb(61, 61, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.main-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 0 50px;
+  gap: 10px;
+  color: white;
+}
+.box {
+  padding: 10px 16px;
+  background: red;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 2rem;
+}
+/* pannel butom  */
+#pab {
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: calc(100% - 90px);
+  background: #000;
+  color: white;
+  font-size: 2.5rem;
+}
+
+/* making bubble */
+.bubble {
+  width: 60px;
+  height: 60px;
+  background: yellow;
+  border-radius: 50%;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.3rem;
+}
+.bubble:hover {
+  cursor: pointer;
+  background: red;
+  color: white;
+}
+
+/* mobile rsponsibe */
+@media screen and (max-width: 600px) {
+  #pat {
+    width: 100%;
+    height: 90px;
+    background: rgb(61, 61, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .main-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 0 10px;
+    gap: 8px;
+    color: white;
+    
+  }
+  .box {
+    padding: 7px 12px;
+    background: red;
+    border: 1px solid black;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  .main-box h2{
+    font-size: 1rem;
+  }
+  .bubble {
+    width: 40px;
+    height: 40px;
+    background: yellow;
+    border-radius: 50%;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+  
+    
+  }
+}
